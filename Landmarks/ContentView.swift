@@ -12,25 +12,16 @@ struct ContentView: View {
     var x: Bool = true
 
     var body: some View {
-        VStack(
-            alignment: .center, spacing: 16.0
-           ) {
-               ForEach(
-                   1...10,
-                   id: \.self
-               ) {
-                   Text("Bayram \($0)")
-                       .font(.title2)
-                       .fontWeight(.bold)
-                       .foregroundColor(.purple)
-                       .multilineTextAlignment(.leading)
-                       .lineLimit(nil)
-                       .padding()
-                       .frame(height: nil)
-                       
-               }
-           }
-           
+        VStack(alignment: .leading) {
+            Text("Hello Bayram!")
+                .font(.title)
+            HStack {
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+            }
+        }
+        
+        
     }
 }
 
